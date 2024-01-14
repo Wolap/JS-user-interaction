@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 2%;
+    color: white;
+}
+
+.poke-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-inline: 5%;
+    margin-block: 2%;
+    gap: 20px;
+}
+
+.poke-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #93a3b1;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 3%;
+}
+
+.poke-card img {
+    width: 25%;
+}
+
+.poke-card .poke-name, .poke-sprite, .poke-types, .poke-price {
+    padding-bottom: 3%;
+}
+
+.btn-panier {
+    border: none;
+    background-color: #800000;
+    padding: 2%;
+    border-radius: 8px;
+    border:1px solid rgb(255, 255, 255);
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn-panier:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: #9e1515;
+}
+
+
+  
+.bounce {
+    animation-name: bounce;
+    animation-duration: 1s;
+    transform-origin: center bottom;
+}
+
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transform: translate3d(0, -30px, 0) scaleY(1.1);
+    }
+  
+    70% {
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transform: translate3d(0, -15px, 0) scaleY(1.05);
+    }
+  
+    80% {
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0, 0, 0) scaleY(0.95);
+    }
+  
+    90% {
+      transform: translate3d(0, -4px, 0) scaleY(1.02);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .poke-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

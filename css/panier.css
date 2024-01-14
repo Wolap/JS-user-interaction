@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.panier {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 3%;
+    margin-block: 2%;
+}
+
+.panier-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panier-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #93a3b1;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 1%;
+}
+
+.panier-card p {
+    padding-inline: 2%;
+}
+
+.infos-poke {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.infos-poke img {
+    width: 25%;
+}
+
+.infos-prix {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panier-infos {
+    width: 35%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #93a3b1;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 1%;
+    color: white;
+}
+
+.panier-infos h2{
+    padding-bottom: 8%;
+}
+
+.panier-infos p {
+    padding-bottom: 1%;
+}
+
+.btn-delete {
+    border: none;
+    background-color: rgb(136, 0, 0);
+    padding: 2%;
+    border-radius: 8px;
+    border:2px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: #9e1515;
+}
+
+@media screen and (max-width: 768px) {
+    .panier {
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .panier-list {
+        width: 100%;
+    }
+
+
+
+    .panier-infos {
+        width: 100%;
+        margin-top: 5%;
+    }
+}
