@@ -53,8 +53,40 @@ h1 {
     background-color: #9e1515;
 }
 
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-  
+.search input {
+    background-color: #93a3b1;
+    color: white;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+.btn-search {
+    border: none;
+    background-color: #800000;
+    padding: 1%;
+    border-radius: 8px;
+    border:1px solid rgb(255, 255, 255);
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 1%;
+}
+
+.btn-search:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: #9e1515;
+}
+
+
 .bounce {
     animation-name: bounce;
     animation-duration: 1s;
